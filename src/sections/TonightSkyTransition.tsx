@@ -677,7 +677,7 @@ export default function TonightSkyTransition() {
 
             <div className="sky-transition-scroll">
                 <span>
-                    EXPLORE
+                    SCROLL TO EXPLORE
                 </span>
 
                 <i />

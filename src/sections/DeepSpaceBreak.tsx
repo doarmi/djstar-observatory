@@ -610,7 +610,7 @@ export default function DeepSpaceBreak() {
             </div>
 
             <div className="deep-space-break__scroll">
-                <span>KEEP SCROLLING</span>
+                <span>CONTINUE THE JOURNEY</span>
                 <i />
             </div>
         </section>
