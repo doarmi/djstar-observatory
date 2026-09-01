@@ -90,13 +90,11 @@ export default function Header() {
           aria-label="대전시민천문대 홈"
           onClick={handleHome}
         >
-          <span className="brand-mark">
-            DJ
-          </span>
-
-          <span>
-            DAEJEON OBSERVATORY
-          </span>
+          <img
+            className="brand-logo"
+            src="/brand/djstar-logo-horizontal.png"
+            alt="DJSTAR 대전시민천문대"
+          />
         </a>
 
         <nav

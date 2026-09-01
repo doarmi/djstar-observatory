@@ -91,13 +91,13 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-top">
         <div className="footer-brand-area">
-          <span className="footer-brand">
-            DJSTAR
-          </span>
+          <img
+            className="footer-brand-logo"
+            src="/brand/djstar-logo-vertical.png"
+            alt="DJSTAR 대전시민천문대"
+          />
 
           <p>
-            DAEJEON CITIZEN OBSERVATORY
-            <br />
             INTERACTIVE RENEWAL CONCEPT
           </p>
         </div>

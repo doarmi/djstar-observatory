@@ -16952,3 +16952,51 @@ body,
     grid-template-columns: 1fr;
   }
 }
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  width: clamp(150px, 11vw, 205px);
+  height: auto;
+  object-fit: contain;
+  transition:
+    opacity 0.25s ease,
+    filter 0.25s ease;
+}
+
+.brand:hover .brand-logo {
+  opacity: 0.88;
+  filter: drop-shadow(0 0 10px rgba(168, 208, 255, 0.28));
+}
+
+@media (max-width: 900px) {
+  .brand-logo {
+    width: 145px;
+  }
+}
+
+@media (max-width: 640px) {
+  .brand-logo {
+    width: 125px;
+  }
+}
+
+/* DJSTAR Footer Brand Logo */
+.footer-brand-logo {
+  display: block;
+  width: clamp(150px, 12vw, 210px);
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 0 18px rgba(64, 107, 255, 0.16));
+}
+
+.footer-brand-area p {
+  margin-top: 0;
+}
