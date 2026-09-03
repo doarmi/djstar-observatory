@@ -310,23 +310,6 @@ export default function VisitSection() {
                 aria-hidden="true"
               />
 
-              <button
-                className="visit-map-open"
-                type="button"
-                onClick={() =>
-                  openExternal(
-                    MAP_LARGE_URL,
-                  )
-                }
-              >
-                <span>
-                  OPEN MAP
-                </span>
-
-                <strong>
-                  크게 보기 ↗
-                </strong>
-              </button>
 
               <div className="visit-map-coordinate">
                 <span>
