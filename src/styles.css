@@ -2304,25 +2304,46 @@ a {
 }
 
 .round-arrow {
-  width: 42px;
-  height: 42px;
+  width: 64px;
+  height: 64px;
 
-  color: #fff;
-  background: rgba(255, 255, 255, 0.03);
+  padding: 0;
+  border: 0;
+  background: transparent;
 
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
 
   transition:
     transform .25s ease,
-    background-color .25s ease,
-    border-color .25s ease;
+    filter .25s ease;
+}
+
+
+
+.round-arrow-icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+
+  /* 원본이 ← 이므로 → 방향으로 뒤집기 */
+  transform: scaleX(-1);
+
+  transition:
+    transform .25s ease,
+    filter .25s ease;
 }
 
 .experience-card:hover .round-arrow {
-  transform: translateX(2px);
-  background: rgba(255, 255, 255, .07);
-  border-color: rgba(210, 224, 255, .32);
+  transform: translateX(4px);
+}
+
+.experience-card:hover .round-arrow-icon {
+  transform: scaleX(-1) scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(95, 160, 255, .45));
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3476,23 +3497,45 @@ a {
 
 .visit-info-arrow {
   align-self: start;
+  position: relative;
+  right: 20px;
+  width: 52px;
+  height: 52px;
 
-  color: var(--muted-2);
+  display: grid;
+  place-items: center;
 
-  font-size: 13px;
-  line-height: 1;
+  overflow: visible;
 
   transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.visit-info-arrow-icon {
+  display: block;
+  width: 46px;
+  height: 46px;
+  max-width: 46px;
+  max-height: 46px;
+  object-fit: contain;
+
+  /* 원본 ← 를 → 방향으로 */
+  transform: scaleX(-1);
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .visit-info-item:hover .visit-info-arrow {
-  color: #fff;
+  transform: translate(3px, -3px);
+}
 
-  transform:
-    translate(3px,
-      -3px);
+.visit-info-item:hover .visit-info-arrow-icon {
+  transform: scaleX(-1) scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(95, 160, 255, .45));
+
 }
 
 /* =========================
@@ -3605,6 +3648,16 @@ a {
   transition:
     color 0.3s ease,
     transform 0.3s ease;
+  width: 46px;
+  height: 46px;
+}
+
+.visit-transport-arrow-icon {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  transform: scaleX(-1);
 }
 
 .visit-transport-card:hover .visit-transport-arrow {
@@ -4532,30 +4585,42 @@ a {
 }
 
 .news-row-arrow {
-  width: 32px;
-  height: 32px;
-
+  width: 52px;
+  height: 52px;
+  margin-right: 32px;
   padding: 0;
 
   display: grid;
   place-items: center;
 
-  color: var(--muted-2);
+
   background: transparent;
 
   border: 0;
 
-  font-size: 13px;
+  overflow: hidden;
 
   transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .news-list-item:hover .news-row-arrow {
-  color: #fff;
-
   transform: translate(3px, -3px);
+}
+
+.news-row-arrow-icon {
+  display: block;
+  width: 46px;
+  height: 46px;
+  max-width: 46px;
+  max-height: 46px;
+  object-fit: contain;
+  transform: scaleX(-1);
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 /* =========================
@@ -17251,7 +17316,7 @@ body,
 .visit-guide-card {
   transform: none !important;
   position: relative;
-  top: 24px;
+  top: 0;
 }
 
 /* =========================

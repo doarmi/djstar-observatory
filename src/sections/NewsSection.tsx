@@ -1005,7 +1005,11 @@ export default function NewsSection() {
                         )
                       }}
                     >
-                      ↗
+                      <img
+                        src="/images/nav-arrow.png"
+                        alt=""
+                        className="news-row-arrow-icon"
+                      />
                     </button>
                   </article>
                 ),

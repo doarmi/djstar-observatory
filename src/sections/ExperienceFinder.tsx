@@ -183,7 +183,11 @@ export default function ExperienceFinder() {
                         )
                       }}
                     >
-                      →
+                      <img
+                        src="/images/nav-arrow.png"
+                        alt=""
+                        className="round-arrow-icon"
+                      />
                     </button>
                   </div>
                 </div>

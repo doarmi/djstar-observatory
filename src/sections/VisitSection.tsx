@@ -568,7 +568,11 @@ export default function VisitSection() {
                         className="visit-info-arrow"
                         aria-hidden="true"
                       >
-                        ↗
+                        <img
+                          src="/images/nav-arrow.png"
+                          alt=""
+                          className="visit-info-arrow-icon"
+                        />
                       </span>
                     </article>
                   )
@@ -629,7 +633,11 @@ export default function VisitSection() {
                     className="visit-transport-arrow"
                     aria-hidden="true"
                   >
-                    ↗
+                    <img
+                      src="/images/nav-arrow.png"
+                      alt=""
+                      className="visit-transport-arrow-icon"
+                    />
                   </span>
                 </article>
               )
