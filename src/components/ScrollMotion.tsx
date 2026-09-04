@@ -81,7 +81,7 @@ export default function ScrollMotion() {
           section => {
             const targets =
               section.querySelectorAll<HTMLElement>(
-                '.section-head, article, .preview-list, .visit-grid, .news-grid',
+                '.section-head, article:not(.visit-transport-card):not(.visit-guide-card), .preview-list, .visit-grid, .news-grid',
               )
 
             if (
