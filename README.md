@@ -18,13 +18,12 @@ DJSTAR는 천문대의 정보를 단순히 나열하는 방식에서 벗어나, 
 
 ------------------------------------------------------------------------
 
-## Live Demo
+## Project Links
 
-🔗 **DJSTAR**  
-https://djstar-observatory.vercel.app/
-
-> 대전시민천문대를 사용자 경험 중심으로 리뉴얼한 인터랙티브 웹 프로젝트를 확인할 수 있습니다.
-
+- 🌐 **Vercel** — [배포 사이트](https://djstar-observatory.vercel.app/)
+- 🎨 **Figma** — [디자인 페이지](https://www.figma.com/design/TAofx6nQEiv7iTqWg0Wct4/Untitled?node-id=0-1&t=ljdoVvNSjkbBiHlI-1)
+- 🖼️ **Notefolio** — [포트폴리오 보기](https://notefolio.net/hyogu_U2)
+- 📄 **Notion** — [포트폴리오 노션](https://app.notion.com/p/375cedfd0bc08356a2ae817409b561ea?source=copy_link)
 
 ## 주요 경험
 
